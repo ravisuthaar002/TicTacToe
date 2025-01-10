@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100vh;
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gamePanel{
+    margin: 20px 120px;
+    width: 216px;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.cell{
+    border: 1px solid gray;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#result{
+    text-align: center;
+}
+#playBtn{
+    display: inline-block;
+    margin: auto;
+    padding: 16px;
+}
+#header{
+    margin: 16px;
+    margin-top: 120px;
+}
+.player{ 
+    color: black ;
+}
