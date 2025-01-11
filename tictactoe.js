@@ -1,68 +1,3 @@
-// let arr = [['x','x','o'],
-//            ['x','o','o'],
-//            ['x','o','x']];
-
-// let a = arr[0][0];
-// let b = arr[0][1];
-// let c = arr[0][2];
-// let d = arr[1][0];
-// let e = arr[2][0];
-//  let a1,b1,c1,d1,e1;
-
-// for(let j=0; j<=2; j++){
-//     if(arr[0][j] = a){
-//             a1++;
-//             if(a1==3){
-//                 console.log(a)
-//             }
-//     }
-
-//     if(arr[1][j] = b){
-//             b1++;
-//             if(b1==3){
-//                 console.log(b)
-//             }
-//     }
-
-//     if(arr[2][j] = c){
-//             c1++;
-//             if(c1==3){
-//                 console.log(c)
-//             }
-//     }
-
-//     if(arr[j][0] = a){
-//             a1++;
-//             if(a1==3){
-//                 console.log(a)
-//             }
-//     }
-
-//     if(arr[j][1] = d){
-//         d1++;
-//         if(d1==3){
-//             console.log(d)
-//         }
-//     }
-//     if(arr[j][2] = e){
-//         e1++;
-//         if(e1==3){
-//             console.log(e)
-//         }
-//     }
-//     if(arr[j][j] = a){
-//         a1++;
-//         if(a1==3){
-//             console.log(a)
-//         }
-//     }
-//     if(arr[j][2-j] = e){
-//         e1++;
-//         if(e1==3){
-//             console.log(e)
-//         }
-//     }
-// }
 
 let cells = ["", "", "", "", "", "", "", "", ""]; // O X
 
@@ -144,8 +79,6 @@ function cellClick(e) {
                         document.getElementById("player2").innerText = O;
 
                     }
-                    // stepCount=1;
-                    // return;
                 }
             }
         }
@@ -163,12 +96,8 @@ function cellClick(e) {
             console.log(winner);
             document.getElementById("result").innerText = winner;
             document.getElementById("playBtn").innerText = "Play again!";
-            // stepCount =1;
         }
         stepCount++;
-        // if (stepCount == 9) {
-        //     stepCount =1; 
-        // }
         document.getElementById("header").innerText = `Turn: ${currentPlayer} | Step: ${stepCount}`;
     }
 }
